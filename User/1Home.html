@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet prefetch"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet prefetch"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
+    />
+    <link
+      rel="stylesheet prefetch"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+    />
+
+    <title>USANE</title>
+    <style type="text/css">
+      h2 {
+        color: #333;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative;
+        margin: 30px 0 60px;
+      }
+      h2::after {
+        content: "";
+        width: 100px;
+        position: absolute;
+        margin: 0 auto;
+        height: 3px;
+        background: #0275d8;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+      }
+      .col-center {
+        margin: 0 auto;
+        float: none !important;
+      }
+      .carousel {
+        margin: 50px auto;
+        padding: 0 70px;
+      }
+      .carousel .item {
+        color: #999;
+        font-size: 14px;
+        text-align: center;
+        overflow: hidden;
+        min-height: 290px;
+      }
+      .carousel .item .img-box {
+        width: 135px;
+        height: 135px;
+        margin: 0 auto;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+      }
+      .carousel .img-box img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 50%;
+      }
+      .carousel .testimonial {
+        padding: 30px 0 10px;
+      }
+      .carousel .overview {
+        font-style: italic;
+      }
+      .carousel .overview b {
+        text-transform: uppercase;
+        color: #0275d8;
+      }
+      .carousel .carousel-control {
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        top: 50%;
+        background: none;
+      }
+      .carousel-control i {
+        font-size: 68px;
+        line-height: 42px;
+        position: absolute;
+        display: inline-block;
+        color: #0275d8;
+      }
+      .carousel .carousel-indicators {
+        bottom: -40px;
+      }
+      .carousel-indicators li,
+      .carousel-indicators li.active {
+        width: 20px;
+        margin: 1px 3px;
+        border-radius: 50%;
+      }
+      .carousel-indicators li {
+        background: #0275d8;
+        border-color: transparent;
+      }
+      .carousel-indicators li.active {
+        background: #0275d8;
+      }
+      .owl-buttons {
+        display: block;
+      }
+      .owl-carousel:hover .owl-buttons {
+        display: block;
+      }
+
+      .owl-item {
+        text-align: center;
+      }
+
+      .owl-theme .owl-controls .owl-buttons div {
+        background: transparent;
+        color: #0275d8;
+        font-size: 50px;
+        line-height: 40px;
+        margin: 0;
+        padding: 0 0px;
+        position: absolute;
+        top: 20px;
+      }
+      .owl-theme .owl-controls .owl-buttons .owl-prev {
+        opacity: 0.7;
+        left: 30px;
+        padding-right: 20px;
+      }
+      .owl-theme .owl-controls .owl-buttons .owl-next {
+        opacity: 0.7;
+        right: 30px;
+        padding-left: 20px;
+      }
+      .owl-pagination {
+        text-align: left !important;
+        margin-left: 20px;
+      }
+      .slider img {
+        width: 130px;
+      }
+      .slider img:hover {
+        transform: scale(1.2);
+      }
+      .owl-page span {
+        background: royalblue !important;
+      }
+
+      element.style {
+        overflow-x: hidden !important;
+      }
+    </style>
+  </head>
+  <body style="overflow-x: hidden !important;">
+    <!-- Header -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light px-5 border shadow"
+    >
+      <a class="h1 font-weight-bold text-dark" href="#">USANE</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a
+            class="nav-item nav-link h5 font-weight-bold text-primary mr-4"
+            href="#"
+            >HOME</a
+          >
+          <a
+            data-toggle="modal"
+            data-target="#professionalSignup"
+            class="nav-item nav-link h5 font-weight-bold mr-4 text-dark"
+            href="#"
+            >BECOME A PROFESSIONAL</a
+          >
+          <!-- PROFESSIONAL Signup Modal -->
+          <div
+            class="modal fade"
+            id="professionalSignup"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content" style="border-radius: 25px;">
+                <div class="col">
+                  <div class="d-flex">
+                    <div class="ml-auto">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <ion-icon
+                          class="p-2 rounded-circle border shadow-lg"
+                          name="close-outline"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="mx-md-5 mx-3 mb-4">
+                    <p class="h1 text-center">USANE</p>
+                    <div class="d-flex justify-content-center">
+                      <div
+                        style="border-bottom: 2px solid #0275d8;"
+                        class="mr-2 pb-1"
+                      >
+                        <a
+                          data-toggle="modal"
+                          data-target="#professionalSignup"
+                          href="#"
+                          class="text-dark"
+                        >
+                          Sign Up
+                        </a>
+                      </div>
+                      <div
+                        style="border-bottom: 2px solid #0275d8;"
+                        class="ml-2"
+                      >
+                        <a
+                          data-toggle="modal"
+                          data-target="#professionalLogin"
+                          href="#"
+                          class="text-dark"
+                        >
+                          <span
+                            data-toggle="modal"
+                            data-target="#professionalSignup"
+                          >
+                            Sign In
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                    <p class="text-center">
+                      as Professionals
+                    </p>
+                    <button
+                      type="button"
+                      style="border-radius: 50px;"
+                      class="btn btn-lg btn-block btn-primary mt-4 p-2"
+                    >
+                      <div class="row p-1">
+                        <div class="col-md-3 col-3 text-center">
+                          <img
+                            width="33px"
+                            class="bg-white rounded-circle"
+                            src="./images/facebook.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-md-9 col-9 text-left">
+                          Register By Facebook
+                        </div>
+                      </div>
+                    </button>
+                    <button
+                      type="button"
+                      style="border-radius: 50px;"
+                      class="btn btn-lg btn-block btn-primary mt-4 p-2"
+                    >
+                      <div class="row p-1">
+                        <div class="col-md-3 col-3 text-center">
+                          <img
+                            width="30px"
+                            class="bg-white rounded-circle"
+                            src="./images/google.png"
+                          />
+                        </div>
+                        <div class="col-md-9 col-9 text-left">
+                          Register By Google
+                        </div>
+                      </div>
+                    </button>
+                    <a href="./4EditProfile.html">
+                      <button
+                        type="button"
+                        style="border-radius: 50px;"
+                        class="btn btn-lg btn-block btn-dark mt-4 px-2"
+                      >
+                        <div class="row px-1">
+                          <div class="col-md-3 col-3 text-center mt-1">
+                            <ion-icon
+                              style="font-size: 26px;"
+                              class="bg-white text-danger p-1 rounded-circle"
+                              name="mail"
+                            ></ion-icon>
+                          </div>
+                          <div class="col-md-9 col-9 text-left mt-1">
+                            Register By Email
+                          </div>
+                        </div>
+                      </button>
+                    </a>
+                    <p class="mt-3 text-center text-muted small">
+                      On registering by email or Facebook <br />
+                      you accept our legal terms & conditions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROFESSIONAL Login Modal -->
+          <div
+            class="modal fade"
+            id="professionalLogin"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content" style="border-radius: 25px;">
+                <div class="col">
+                  <div class="d-flex">
+                    <div class="ml-auto">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <ion-icon
+                          class="p-2 rounded-circle border shadow-lg"
+                          name="close-outline"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="mx-5 mb-4">
+                    <p class="h1 text-center">USANE</p>
+                    <div class="d-flex justify-content-center">
+                      <div
+                        style="border-bottom: 2px solid #0275d8;"
+                        class="mr-2 pb-1"
+                      >
+                        <a
+                          data-toggle="modal"
+                          data-target="#professionalSignup"
+                          href="#"
+                          class="text-dark"
+                          >Sign Up</a
+                        >
+                      </div>
+                      <div
+                        style="border-bottom: 2px solid #0275d8;"
+                        class="ml-2"
+                      >
+                        <a
+                          data-toggle="modal"
+                          data-target="#professionalLogin"
+                          href="#"
+                          class="text-dark"
+                        >
+                          <span
+                            data-toggle="modal"
+                            data-target="#professionalSignup"
+                          >
+                            Sign In
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                    <p class="text-center">
+                      as Professionals
+                    </p>
+                    <form action="">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          style="border-radius: 50px;"
+                          class="form-control form-control-lg bg-light"
+                          placeholder="EMAIL"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <input
+                          class="form-control form-control-lg bg-light"
+                          style="border-radius: 50px;"
+                          type="email"
+                          placeholder="PASSWORD"
+                        />
+                      </div>
+                      <a href="./12HomeLogedIn.html">
+                        <button
+                          type="button"
+                          style="border-radius: 50px;"
+                          class="btn btn-lg btn-block btn-dark p-2 font-weight-bold"
+                        >
+                          LOG IN
+                        </button>
+                      </a>
+                    </form>
+                    <p class="mt-3 text-center font-weight-bold">
+                      Forget Password?
+                    </p>
+
+                    <div class="text-center mt-3 row">
+                      <div class="col-6 px-2 text-right">
+                        <button
+                          type="button"
+                          style="border-radius: 50px;"
+                          class="btn btn-primary w-100 p-2 font-weight-bold"
+                        >
+                          <img
+                            width="25px"
+                            class="bg-white rounded-circle mr-2"
+                            src="./images/facebook.png"
+                            alt=""
+                          />
+                          Facebook
+                        </button>
+                      </div>
+                      <div class="col-6 px-2 text-left">
+                        <button
+                          type="button"
+                          style="border-radius: 50px;"
+                          class="btn btn-primary w-100 py-2 font-weight-bold"
+                        >
+                          <img
+                            width="25px"
+                            class="bg-white rounded-circle mr-2"
+                            src="./images/google.png"
+                          />
+                          Google
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a
+            class="nav-item nav-link h5 font-weight-bold mr-4 text-dark"
+            href="./13Services.html"
+            >OUR PROGRAMS</a
+          >
+          <a
+            class="nav-item nav-link h5 font-weight-bold mr-4 text-dark"
+            href="./11Magazine.html"
+            >MAGZINE</a
+          >
+          <a
+            data-toggle="modal"
+            data-target="#userSignup"
+            class="nav-item nav-link h5 font-weight-bold mr-4 text-dark"
+            href="#"
+            >JOIN US</a
+          >
+          <!-- User Signup Modal -->
+          <div
+            class="modal fade"
+            id="userSignup"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content" style="border-radius: 25px;">
+                <div class="col">
+                  <div class="d-flex">
+                    <div class="ml-auto">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <ion-icon
+                          class="p-2 rounded-circle border shadow-lg"
+                          name="close-outline"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="mx-md-5 mx-3 mb-4">
+                    <p class="h1 text-center">USANE</p>
+                    <p class="text-center">
+                      Sign up as a User
+                    </p>
+                    <button
+                      type="button"
+                      style="border-radius: 50px;"
+                      class="btn btn-lg btn-block btn-primary mt-4 p-2"
+                    >
+                      <div class="row p-1">
+                        <div class="col-md-3 col-3 text-center">
+                          <img
+                            width="33px"
+                            class="bg-white rounded-circle"
+                            src="./images/facebook.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-md-9 col-9 text-left">
+                          Register By Facebook
+                        </div>
+                      </div>
+                    </button>
+                    <button
+                      type="button"
+                      style="border-radius: 50px;"
+                      class="btn btn-lg btn-block btn-primary mt-4 p-2"
+                    >
+                      <div class="row p-1">
+                        <div class="col-md-3 col-3 text-center">
+                          <img
+                            width="30px"
+                            class="bg-white rounded-circle"
+                            src="./images/google.png"
+                          />
+                        </div>
+                        <div class="col-md-9 col-9 text-left">
+                          Register By Google
+                        </div>
+                      </div>
+                    </button>
+                    <a href="./4EditProfile.html">
+                      <button
+                        type="button"
+                        style="border-radius: 50px;"
+                        class="btn btn-lg btn-block btn-dark mt-4 px-2"
+                      >
+                        <div class="row px-1">
+                          <div class="col-md-3 col-3 text-center mt-1">
+                            <ion-icon
+                              style="font-size: 26px;"
+                              class="bg-white text-danger p-1 rounded-circle"
+                              name="mail"
+                            ></ion-icon>
+                          </div>
+                          <div class="col-md-9 col-9 text-left mt-1">
+                            Register By Email
+                          </div>
+                        </div>
+                      </button>
+                    </a>
+                    <p class="mt-3 text-center text-muted small">
+                      On registering by email or Facebook <br />
+                      you accept our legal terms & conditions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a
+            data-toggle="modal"
+            data-target="#userLogin"
+            class="nav-item nav-link h5 font-weight-bold mr-4 text-dark"
+            href="#"
+            >LOGIN
+          </a>
+          <!-- User Login Modal -->
+          <div
+            class="modal fade"
+            id="userLogin"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content" style="border-radius: 25px;">
+                <div class="col">
+                  <div class="d-flex">
+                    <div class="ml-auto">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <ion-icon
+                          class="p-2 rounded-circle border shadow-lg"
+                          name="close-outline"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="mx-5 mb-4">
+                    <p class="h1 text-center">USANE</p>
+                    <p class="text-center pb-3">
+                      Log in as User
+                    </p>
+                    <form action="">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          style="border-radius: 50px;"
+                          class="form-control form-control-lg bg-light"
+                          placeholder="EMAIL"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <input
+                          class="form-control form-control-lg bg-light"
+                          style="border-radius: 50px;"
+                          type="email"
+                          placeholder="PASSWORD"
+                        />
+                      </div>
+                      <a href="../4EditProfile.html">
+                        <button
+                          type="button"
+                          style="border-radius: 50px;"
+                          class="btn btn-lg btn-block btn-dark p-2 font-weight-bold"
+                        >
+                          LOG IN
+                        </button>
+                      </a>
+                    </form>
+                    <p class="mt-3 text-center font-weight-bold">
+                      Forget Password?
+                    </p>
+
+                    <div class="text-center mt-3 row">
+                      <div class="col-6 px-2 text-right">
+                        <button
+                          type="button"
+                          style="border-radius: 50px;"
+                          class="btn btn-primary w-100 p-2 font-weight-bold"
+                        >
+                          <img
+                            width="25px"
+                            class="bg-white rounded-circle mr-2"
+                            src="./images/facebook.png"
+                            alt=""
+                          />
+                          Facebook
+                        </button>
+                      </div>
+                      <div class="col-6 px-2 text-left">
+                        <button
+                          type="button"
+                          style="border-radius: 50px;"
+                          class="btn btn-primary w-100 py-2 font-weight-bold"
+                        >
+                          <img
+                            width="25px"
+                            class="bg-white rounded-circle mr-2"
+                            src="./images/google.png"
+                          />
+                          Google
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <div style="width: 100%; overflow-x: hidden;">
+      <div class="bgPic">
+        <div class="d-flex h-100 justify-content-center align-items-center">
+          <div class="row">
+            <div class="col-md-6 d-flex">
+              <div class="m-auto">
+                <h1 class="font-weight-bold pl-5 text-justify">
+                  USANE
+                </h1>
+                <p class="mt-4 lead text-muted text-justify px-5 mr-5">
+                  Examples and usage guidelines for form control styles, layout
+                  options, and custom components for creating variety of forms
+                </p>
+
+                <!-- Search all except mobile  -->
+                <div class="d-none d-sm-block">
+                  <div class="d-flex flex-row mt-5 px-3">
+                    <div class="">
+                      <input
+                        type="text"
+                        style="border-style: none; border-top-left-radius: 50px; border-bottom-left-radius: 50px;"
+                        class="form-control form-control-lg"
+                        placeholder="Select Subject"
+                      />
+                    </div>
+                    <div class="">
+                      <input
+                        type="text"
+                        style="border-style: none;"
+                        class="form-control form-control-lg"
+                        placeholder="Select Area"
+                      />
+                    </div>
+                    <div class="text-center">
+                      <a href="./10Search.html">
+                        <button
+                          type="submit"
+                          style=" border-top-right-radius: 50px; border-bottom-right-radius: 50px;"
+                          class="btn btn-primary btn-lg px-5"
+                        >
+                          Search
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Search on mobile  -->
+                <div class="d-block d-sm-none">
+                  <div class="d-flex flex-column mt-5 px-3">
+                    <div class="mt-3">
+                      <input
+                        type="text"
+                        style="border-style: none; border-radius: 50px;"
+                        class="form-control form-control-lg"
+                        placeholder="Select Subject"
+                      />
+                    </div>
+                    <div class="mt-3">
+                      <input
+                        type="text"
+                        style="border-style: none; border-radius: 50px;"
+                        class="form-control form-control-lg"
+                        placeholder="Select Area"
+                      />
+                    </div>
+                    <div class="text-center mt-3">
+                      <a href="./10Search.html">
+                        <button
+                          type="submit"
+                          style="border-style: none; border-radius: 50px"
+                          class="btn btn-primary btn-lg px-5"
+                        >
+                          Search
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Our Trainers -->
+        <div class="mt-4">
+          <h2 class="text-center font-weight-bold">Our Trainers</h2>
+          <p class="text-muted text-center lead mx-md-5 px-md-5">
+            Examples and usage guidelines for form control styles, Examples and
+            usage guidelines for form control styles, layout options, and custom
+            components for creating a wide variety of forms.
+          </p>
+          <div class="row my-5">
+            <div class="col-md-2 col-4 text-center">
+              <a href="./5Profile.html">
+                <img
+                  width="80"
+                  class="rounded-circle"
+                  src="./images/dp.png"
+                  alt="Profile"
+              /></a>
+              <h5>Alex Bexter</h5>
+              <span class="text-muted">Instructor</span>
+              <div class="text-warning">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+            </div>
+            <div class="col-md-2 col-4 text-center">
+              <a href="./5Profile.html">
+                <img
+                  width="80"
+                  class="rounded-circle"
+                  src="./images/dp.png"
+                  alt="Profile"
+              /></a>
+              <h5>Alex Bexter</h5>
+              <span class="text-muted">Instructor</span>
+              <div class="text-warning">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+            </div>
+            <div class="col-md-2 col-4 text-center">
+              <a href="./5Profile.html">
+                <img
+                  width="80"
+                  class="rounded-circle"
+                  src="./images/dp.png"
+                  alt="Profile"
+              /></a>
+              <h5>Alex Bexter</h5>
+              <span class="text-muted">Instructor</span>
+              <div class="text-warning">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+            </div>
+            <div class="col-md-2 col-4 text-center">
+              <a href="./5Profile.html">
+                <img
+                  width="80"
+                  class="rounded-circle"
+                  src="./images/dp.png"
+                  alt="Profile"
+              /></a>
+              <h5>Alex Bexter</h5>
+              <span class="text-muted">Instructor</span>
+              <div class="text-warning">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+            </div>
+            <div class="col-md-2 col-4 text-center">
+              <a href="./5Profile.html">
+                <img
+                  width="80"
+                  class="rounded-circle"
+                  src="./images/dp.png"
+                  alt="Profile"
+              /></a>
+              <h5>Alex Bexter</h5>
+              <span class="text-muted">Instructor</span>
+              <div class="text-warning">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+            </div>
+            <div class="col-md-2 col-4 text-center">
+              <a href="./5Profile.html">
+                <img
+                  width="80"
+                  class="rounded-circle"
+                  src="./images/dp.png"
+                  alt="Profile"
+              /></a>
+              <h5>Alex Bexter</h5>
+              <span class="text-muted">Instructor</span>
+              <div class="text-warning">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service We Offer -->
+        <div>
+          <h2 class="text-center font-weight-bold">Services We Offer</h2>
+          <p class="text-muted text-center lead mx-md-5 px-md-5">
+            Examples and usage guidelines for form control styles, Examples and
+            usage guidelines for form control styles, layout options, and custom
+            components for creating a wide variety of forms.
+          </p>
+
+          <div class="container">
+            <div class="row">
+              <div id="owl-example" class="owl-carousel">
+                <div class="slider">
+                  <img src="./images/Resources/s1.png" alt="" />
+                  <h3 class="mt-2">YOGA1</h3>
+                </div>
+                <div class="slider">
+                  <img src="./images/Resources/s2.png" alt="" />
+                  <h3 class="mt-2">YOGA2</h3>
+                </div>
+                <div class="slider">
+                  <img src="./images/Resources/s3.png" alt="" />
+                  <h3 class="mt-2">YOGA3</h3>
+                </div>
+                <div class="slider">
+                  <img src="./images/Resources/s4.png" alt="" />
+                  <h3 class="mt-2">YOGA4</h3>
+                </div>
+                <div class="slider">
+                  <img src="./images/Resources/s5.png" alt="" />
+                  <h3 class="mt-2">YOGA5</h3>
+                </div>
+                <div class="slider">
+                  <img src="./images/Resources/s6.png" alt="" />
+                  <h3 class="mt-2">YOGA6</h3>
+                </div>
+                <div class="slider">
+                  <img src="./images/Resources/s7.png" alt="" />
+                  <h3 class="mt-2">YOGA7</h3>
+                </div>
+                <div class="slider">
+                  <img src="./images/Resources/s7.png" alt="" />
+                  <h3 class="mt-2">YOGA7</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Choose us? -->
+      <div class="h-50 bg-primary text-white py-5">
+        <h1 class="text-center font-weight-bold">Why Choose Us?</h1>
+        <hr width="100px" style="height: 1px;" class="text-center bg-white" />
+        <p class="text-center lead mx-3 mx-md-5 px-md-5">
+          Examples and usage guidelines for form control styles, Examples and
+          usage guidelines for form control styles, layout options, and custom
+          components for creating a wide variety of forms.
+        </p>
+        <div class="container mt-5">
+          <div class="row text-center">
+            <div class="col-12 col-md-4">
+              <img
+                style="font-size: 80px;"
+                src="./images/Resources/whyus1.png"
+              />
+              <h4 class="mt-3">Over 50000</h4>
+              <p class="lead">Satisfied Users</p>
+            </div>
+            <div class="col-12 col-md-4">
+              <img
+                style="font-size: 80px;"
+                src="./images/Resources/whyus2.png"
+              />
+              <h4 class="mt-3">Over 1.5 Million</h4>
+              <p class="lead">Top Rated Professionals</p>
+            </div>
+            <div class="col-12 col-md-4">
+              <img
+                style="font-size: 80px;"
+                src="./images/Resources/whyus3.png"
+              />
+              <h4 class="mt-3">Over 15 Million</h4>
+              <p class="lead">Satisfied Users</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Magazine/Article -->
+      <div class="container">
+        <h2 class="text-center font-weight-bold mt-5">Magazines/ Articles</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mt-3">
+              <div class="card">
+                <a href="./16SingleMagazine.html">
+                  <img
+                    class="card-img-top"
+                    src="./images/Resources/m1.png"
+                    alt="Card image cap"
+                  />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text text-muted">
+                    Some quick example text to build Some quick example text to
+                    build Some quick example text to build Some quick example
+                    text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+                  <hr style="background-color: rgb(25, 230, 134);" />
+                  <p class="text-muted h6">
+                    Jan 01 2020<span class="float-right">By Admin</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-3">
+              <div class="card">
+                <a href="./16SingleMagazine.html">
+                  <img
+                    class="card-img-top"
+                    src="./images/Resources/m2.png"
+                    alt="Card image cap"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 mt-3">
+              <div class="card">
+                <a href="./16SingleMagazine.html">
+                  <img
+                    class="card-img-top"
+                    src="./images/Resources/m3.png"
+                    alt="Card image cap"
+                  />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text text-muted">
+                    Some quick example text to build Some quick example text to
+                    build Some quick example text to build Some quick example
+                    text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+                  <hr style="background-color: rgb(25, 230, 134);" />
+                  <p class="text-muted h6">
+                    Jan 01 2020<span class="float-right">By Admin</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-3">
+              <div class="card">
+                <a href="./16SingleMagazine.html">
+                  <img
+                    class="card-img-top"
+                    src="./images/Resources/m4.png"
+                    alt="Card image cap"
+                  />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text text-muted">
+                    Some quick example text to build Some quick example text to
+                    build Some quick example text to build Some quick example
+                    text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+                  <hr style="background-color: rgb(25, 230, 134);" />
+                  <p class="text-muted h6">
+                    Jan 01 2020<span class="float-right">By Admin</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-3">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./images/Resources/m5.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text text-muted">
+                    Some quick example text to build Some quick example text to
+                    build Some quick example text to build Some quick example
+                    text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+                  <hr style="background-color: rgb(25, 230, 134);" />
+                  <p class="text-muted h6">
+                    Jan 01 2020<span class="float-right">By Admin</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-3">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./images/Resources/m6.png"
+                  alt="Card image cap"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Reviews -->
+      <div class="row mt-5 bg-light">
+        <div class="col-md-8 col-center m-auto">
+          <h2>Reviews</h2>
+
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+              <div class="item carousel-item active">
+                <div class="img-box"><img src="./images/dp.png" alt="" /></div>
+                <h5 class="text-dark">Alex Bexter</h5>
+                <span>Instructor</span>
+                <p class="testimonial">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  eu sem tempor, varius quam at, luctus dui. Mauris magna metus,
+                  dapibus nec turpis vel, semper malesuada ante. Idac bibendum
+                  scelerisque non non purus. Suspendisse varius nibh non
+                  aliquet.
+                </p>
+              </div>
+              <div class="item carousel-item">
+                <div class="img-box"><img src="./images/dp.png" alt="" /></div>
+                <h5 class="text-dark">Alice Bexter</h5>
+                <span>Instructor</span>
+                <p class="testimonial">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  eu sem tempor, varius quam at, luctus dui. Mauris magna metus,
+                  dapibus nec turpis vel, semper malesuada ante. Idac bibendum
+                  scelerisque non non purus. Suspendisse varius nibh non
+                  aliquet.
+                </p>
+              </div>
+              <div class="item carousel-item">
+                <div class="img-box"><img src="./images/dp.png" alt="" /></div>
+                <h5 class="text-dark">Alex Bexter</h5>
+                <span>Instructor</span>
+                <p class="testimonial">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  eu sem tempor, varius quam at, luctus dui. Mauris magna metus,
+                  dapibus nec turpis vel, semper malesuada ante. Idac bibendum
+                  scelerisque non non purus. Suspendisse varius nibh non
+                  aliquet.
+                </p>
+              </div>
+            </div>
+            <!-- Carousel controls -->
+            <a
+              class="carousel-control left carousel-control-prev"
+              href="#myCarousel"
+              data-slide="prev"
+            >
+              <i class="fa fa-angle-left"></i>
+            </a>
+            <a
+              class="carousel-control right carousel-control-next"
+              href="#myCarousel"
+              data-slide="next"
+            >
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div>
+      <footer class="text-white bg-dark">
+        <div class="container py-3">
+          <div class="row">
+            <div class="col-md-4 my-3">
+              <h1 class="mb-5 font-weight-bold">USANE</h1>
+              <li style="font-size: 22px;" class="font-weight-bold mt-3">
+                <ion-icon class="mr-3" name="location-sharp"></ion-icon> Abc
+                Street 123
+              </li>
+              <li style="font-size: 22px;" class="font-weight-bold mt-3">
+                <ion-icon class="mr-3" name="call"></ion-icon>+123 456 789
+              </li>
+            </div>
+            <div class="col-md-4 my-3">
+              <h5 class="mb-4 font-weight-bold">CUSTOMER SERVICE</h5>
+              <li style="font-size: 16px;" class="mt-2 font-weight-bold">
+                <a href="#">HOME</a>
+              </li>
+              <li style="font-size: 16px;" class="mt-2 font-weight-bold">
+                <a href="#">BECOME A PROFESSIONAL</a>
+              </li>
+              <li style="font-size: 16px;" class="mt-2 font-weight-bold">
+                <a href="#">EXPLORE</a>
+              </li>
+              <li style="font-size: 16px;" class="mt-2 font-weight-bold">
+                <a href="#">MAGAZINE</a>
+              </li>
+              <li style="font-size: 16px;" class="mt-2 font-weight-bold">
+                <a href="#">JOIN US</a>
+              </li>
+              <li style="font-size: 16px;" class="mt-2 font-weight-bold">
+                <a href="#">LOGIN</a>
+              </li>
+            </div>
+
+            <div class="col-md-4 my-3">
+              <div class="d-flex flex-row bd-highlight mb-3">
+                <div class="">
+                  <input
+                    type="text"
+                    style="background-color: #737373; color: white; border-style: none;
+                  border-top-left-radius: 50px; border-bottom-left-radius: 50px;"
+                    class="form-control form-control-lg"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="">
+                  <button
+                    type="submit"
+                    style="border-top-right-radius: 50px; border-bottom-right-radius: 50px;"
+                    class="btn btn-primary btn-lg px-4"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+
+              <div class="mt-md-5 mt-3">
+                <ion-icon
+                  size="large"
+                  class="mr-2"
+                  name="logo-facebook"
+                ></ion-icon>
+                <ion-icon
+                  size="large"
+                  class="mr-2"
+                  name="logo-instagram"
+                ></ion-icon>
+                <ion-icon
+                  size="large"
+                  class="mr-2"
+                  name="mail-outline"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p style="background-color: black; margin: 0;" class="text-center py-2">
+          © ALL RIGHTS RESERVED USANE 2020
+        </p>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#owl-example").owlCarousel({
+          itemsDesktop: [1499, 7],
+          itemsDesktopSmall: [1199, 5],
+          itemsTablet: [899, 3],
+          itemsMobile: [599, 2],
+          navigation: true,
+          navigationText: [
+            '<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-left fa-stack-1x fa-inverse"></i></span>',
+            '<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-right fa-stack-1x fa-inverse"></i></span>'
+          ]
+        });
+      });
+    </script>
+  </body>
+</html>

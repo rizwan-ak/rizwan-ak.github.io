@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <title>Admin Dashboard</title>
+  </head>
+
+  <body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow">
+          <Link class="navbar-brand" to="/dashboard"></Link>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul
+              class="navbar-nav mr-auto sidenav h-100 bg-white"
+              id="navAccordion"
+            >
+              <li class="nav-item active">
+                <div class="display-4 usaneTitle">
+                  <Link to="/dashboard">USANE</Link>
+                </div>
+                <div class="mx-3">
+                  <li class="nav-item">
+                    <Link to="/dashboard" class="nav-link text-dark h5">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+                      <span className="ml-2">Dashboard</span>
+                    </Link>
+                  </li>
+
+                  <li class="nav-item">
+                    <Link to="/verification" class="nav-link text-dark h5">
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                      <span className="ml-2">Verification</span>
+                    </Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link to="/complaints" class="nav-link text-dark h5">
+                      <ion-icon name="calendar-outline"></ion-icon>
+                      <span className="ml-2">Complaints</span>
+                    </Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link to="/" class="nav-link text-dark h5">
+                      <ion-icon name="log-out-outline"></ion-icon>
+                      <span className="ml-2">Logout</span>
+                    </Link>
+                  </li>
+                </div>
+              </li>
+            </ul>
+            <div
+              style={{ marginLeft: "300px" }}
+              className="d-none d-md-block pt-2"
+            >
+              <button class="btn" onClick={() => this.props.history.goBack()}>
+                <ion-icon name="arrow-back-outline"></ion-icon>
+              </button>
+            </div>
+            <form class="form-inline ml-auto mt-2 mt-md-0">
+              <div class="row d-flex justify-content-end pr-3">
+                <div class="d-flex align-items-center p-2">
+                  <input
+                    style={{ border: "none" }}
+                    class="form-control mr-sm-2"
+                    type="text"
+                    placeholder="Search Professional"
+                    aria-label="Search"
+                  />
+
+                  <button class="btn my-2 my-sm-0" type="submit">
+                    <span className="bg-light px-1 rounded-circle h5">
+                      <ion-icon name="search"></ion-icon>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div class="d-flex align-items-center p-2">
+              <Link to="/dashboard" class="h5 font-weight-bold pr-5">
+                <ion-icon name="notifications-outline"></ion-icon>
+              </Link>
+              <img src={dp} width="35" height="35" class="rounded-circle" />
+              <h5 class="ml-2 pt-2">Hello Alex</h5>
+            </div>
+          </div>
+        </nav>
+        <main class="content-wrapper">
+          <div style={{ paddingTop: "4.5rem" }} class="container">
+            {this.props.children}
+          </div>
+        </main>
+      </div>
+
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  </body>
+</html>

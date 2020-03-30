@@ -1,0 +1,370 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none !important;
+}
+ul {
+  list-style: none;
+}
+
+.HeroSection {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*  Login page css  */
+
+.login {
+  background-color: white;
+  width: 450px;
+  height: 350px;
+  border-radius: 8px;
+}
+
+.login form {
+  width: 60%;
+  margin: auto;
+}
+
+.login form button {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 7px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.iconFacebook,
+.iconFacebook:hover {
+  background-color: #3b5998;
+  color: white;
+}
+
+.iconEmail,
+.iconEmail:hover {
+  background-color: #000;
+  color: white;
+}
+
+.iconGoogle,
+.iconGoogle:hover {
+  background-color: #bd3518;
+  color: white;
+}
+
+.login h4 {
+  margin-top: 35px;
+  font-weight: bold;
+  color: #000;
+}
+
+.login label {
+  font-weight: bold;
+  color: #000;
+}
+
+.signup,
+.signup:hover {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.forgetPassword,
+.forgetPassword:hover {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/*  sign up page css  */
+.SignUpWithSocials {
+  width: 70%;
+  margin: auto;
+}
+
+.SignUpWithSocials i {
+  padding-right: 10px;
+}
+
+.signupConditionLabel {
+  font-size: 12px;
+  text-align: center;
+  margin-left: 35px;
+}
+
+/*   dashboard home page css  */
+
+/* sidebar nav */
+.sidebar {
+  height: 100vh;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 3px rgb(206, 205, 205);
+  z-index: 12;
+}
+
+.sidebar .brand {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: auto;
+}
+
+.sidebar ul li a {
+  color: rgb(99, 98, 98);
+  text-decoration: none;
+}
+
+.current {
+  transition: all 0.3s;
+}
+
+.current:hover {
+  background-color: rgb(226, 226, 226);
+  color: black;
+  transform: translateY(-1px);
+}
+
+.sidebar-link:hover {
+  background-color: rgb(226, 226, 226);
+  color: black;
+}
+
+.top-bar {
+  background-color: white;
+  box-shadow: 2px 2px 3px rgb(206, 205, 205);
+  z-index: 11;
+  display: flex;
+  justify-content: end;
+}
+
+.icon-parent {
+  position: relative;
+}
+
+.icon-bullet::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 26px;
+  height: 7px;
+  width: 7px;
+  background-color: #b71c1c;
+  border-radius: 50%;
+}
+
+.Pusher {
+  margin-top: 50px;
+  margin-left: 365px;
+}
+
+@media (max-width: 768px) {
+  .Pusher {
+    margin-top: 0px;
+    margin: auto 0;
+  }
+
+  .statusBar {
+    display: none;
+  }
+}
+
+@media (max-width: 1048px) {
+  .statusBar {
+    display: none;
+  }
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search {
+  width: 380px;
+}
+
+.has-search .form-control {
+  padding-left: 2rem;
+  background-color: rgb(229, 226, 226);
+  border: 0;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: rgb(65, 63, 63);
+}
+
+.StatusDropdown {
+  margin-bottom: 10px;
+  background-color: rgb(229, 226, 226);
+  width: 150px;
+  line-height: 10px;
+  font-weight: bold;
+  font-size: 13px;
+  display: block;
+}
+
+.colmplainTableHeading {
+  background-color: rgb(229, 226, 226);
+  border-radius: 12px 0;
+}
+
+.complaineStatusTable {
+  background-color: rgb(229, 226, 226);
+  height: 6px;
+}
+
+.complainCard {
+  box-shadow: 5px 5px 15px 5px rgb(229, 226, 226);
+  padding: 10px;
+}
+
+.complainCard .complainCardContent {
+  padding: 30px 15px;
+  font-size: 18px;
+}
+
+.complainCard h5 {
+  margin-left: 10px;
+}
+
+.complainCard label {
+  margin-left: 10px;
+  color: white;
+  width: 150px;
+}
+
+#ApprovelButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ApprovelButtons label {
+  color: black;
+  padding-left: 5px;
+}
+
+#ApprovelButtons #ApproveButton {
+  background-color: rgb(226, 226, 226);
+  line-height: 3px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Approve Page */
+.btn-group .btn {
+  border-radius: 10px;
+  width: 130px;
+  font-weight: 700;
+  color: black;
+}
+
+.container .row .box {
+  box-shadow: 1px 1px 3px 2px rgb(233, 230, 230);
+  border-radius: 5px;
+  height: 100%;
+}
+
+.container .row .box img {
+  margin: 20px 0px 0px 20px;
+}
+
+.container .row .box .btn {
+  float: right;
+  margin: 25px 10px 0px 5px;
+  border-radius: 40px 40px;
+  width: 100px;
+  background-color: #9bee99;
+  color: black;
+  line-height: 15px;
+  border: none;
+  font-weight: 500;
+}
+
+.container .row .box .rate {
+  margin-left: 22%;
+  margin-top: -15px;
+}
+
+.fa-star,
+.fa-star-o {
+  color: orange;
+}
+
+/* Dashboard css */
+#dash {
+  border: 1px rgba(255, 255, 255, 0);
+  box-shadow: 0px 4px 11px 0px rgba(138, 138, 138, 0.51);
+  padding: 70px;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding-left: 200px;
+}
+
+#Sec {
+  background-color: rgb(216, 216, 216);
+  padding: 20px;
+  border-radius: 10px;
+  padding-left: 80px;
+  margin: 20px;
+}
+
+#tab {
+  margin-left: 210px;
+  margin-top: 30px;
+}
+
+.img1 {
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+}
+
+#cardbody {
+  margin-top: 40px;
+}
+
+/*
+@media (max-width: 768px) {
+
+    .sidebar {
+        position: static;
+        height: auto;
+    }
+
+    .top-bar {
+        position: static;
+    }
+}
+
+*/

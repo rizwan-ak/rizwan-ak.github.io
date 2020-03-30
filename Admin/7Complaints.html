@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <title>Admin Dashboard</title>
+  </head>
+
+  <body>
+    <!--Navbar start-->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <button
+        class="navbar-toggler ml-auto mb-2 bg-light"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="container">
+          <div class="row">
+            <!---topbar start-->
+            <div
+              class="col-xl-9 col-lg-9 col-md-8 top-bar ml-auto fixed-top py-2 top-nav"
+            >
+              <div class="row d-flex ml-auto align-items-center pr-3">
+                <div class="col-7 d-flex align-items-center">
+                  <input
+                    type="text"
+                    class=" form-control pr-5"
+                    style="border: none;"
+                    placeholder="Search Professional"
+                  />
+                  <i class="fa fa-search"></i>
+                </div>
+                <div class="col-2 ">
+                  <ul class="navbar-nav">
+                    <li class="nav-item icon-parent">
+                      <a href="#" class="nav-link icon-bullet">
+                        <i class="fa fa-bell-o text-dark fa-lg"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-3 d-flex align-items-center pl-2">
+                  <img
+                    src="./images/dp.png"
+                    width="30"
+                    height="30"
+                    class="rounded-circle"
+                  />
+                  <h5 class="px-2 pt-2">Hello,Alex</h5>
+                </div>
+              </div>
+            </div>
+
+            <!---sidebar start-->
+            <div class="col-xl-3 col-lg-3 col-md-4 sidebar fixed-top">
+              <a
+                href="./2Dashoboard.html"
+                class="navbar-brand text-body d-block mx-auto py-4 my-3 text-center"
+                ><p class="display-4">USANE</p></a
+              >
+              <button
+                style="position: absolute; top: 9px; right: 15px;"
+                class="navbar-toggler ml-auto mb-2 bg-light"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+              <ul class="navabr-nav flex-column mt-4">
+                <li class="nav-item">
+                  <a href="./2Dashoboard.html" class="nav-link p-3 mb-1 current">
+                    <i class="fa fa-tachometer fa-lg mr-3"></i>Dashboard
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="./5Verification.html" class="nav-link  p-3 mb-1 sidebar-link">
+                    <i class="fa fa-check-circle-o fa-lg mr-3 "></i
+                    >Professionals Verification
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./7Complaints.html" class="nav-link p-3 mb-1 sidebar-link">
+                    <i class="fa fa-calendar fa-lg mr-3 "></i>Complaints
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./1login.html" class="nav-link  p-3 mb-1 sidebar-link">
+                    <i class="fa fa-sign-out fa-lg mr-3"></i>Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!---sidebar end-->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar end-->
+
+    <div class="Pusher">
+        <div style="margin-right: 10px;" class="rounded mx-3 border shadow">
+            <div class="row mt-2 mx-3">
+              <a style="color:black" class="mr-3 border-bottom border-success" href="#">Sport Doctor <hrs class="mb-0  bg-success"></a>
+              <a style="color:black" href="#">Trainer</a>
+              <form class="form-inline ml-auto">
+                <input
+                  type="text"
+                  class=" form-control"
+                  style="border: none;"
+                  placeholder="Search"
+                />
+              </form>
+              <i class=" mt-2 fa fa-search"></i>
+            </div>
+          </div>
+          <div class="container">
+
+              <table class="table table-borderless table-responsive-md mt-4">
+                
+            <thead>
+              <tr>
+                <th scope="col">ID NO.</th>
+                <th scope="col">TITLE</th>
+                <th scope="col">DESCRIPTION</th>
+                <th scope="col">DATE</th>
+                <th scope="col">STATUS</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a class="text-dark" href="./6Complaint.html">#3421</a></td>
+                <td style="max-width: 250px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;">This is a dummy title.</td>
+                <td style="max-width: 250px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;">This is a dummy description just to see if it is  working properly or not.</td>
+                <td>01/01/2020</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td><a class="text-dark" href="./6Complaint.html">#3421</a></td>
+                <td style="max-width: 250px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;">This is a dummy title.</td>
+                <td style="max-width: 250px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;">This is a dummy description just to see if it is  working properly or not.</td>
+                <td>01/01/2020</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td><a class="text-dark" href="./6Complaint.html">#3421</a></td>
+                <td style="max-width: 250px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;">This is a dummy title.</td>
+                <td style="max-width: 250px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;">This is a dummy description just to see if it is  working properly or not.</td>
+                <td>01/01/2020</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td><a class="text-dark" href="./6Complaint.html">#3421</a></td>
+                <td style="max-width: 250px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;">This is a dummy title.</td>
+                <td style="max-width: 250px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;">This is a dummy description just to see if it is  working properly or not.</td>
+                <td>01/01/2020</td>
+                <td>Active</td>
+              </tr>
+              
+        </tbody>
+    </table>
+</div>
+    
+    
+      
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  </body>
+</html>

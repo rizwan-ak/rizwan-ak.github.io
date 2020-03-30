@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <title>USANE</title>
+  </head>
+  <body style="overflow-x: hidden !important;">
+
+    <!-- Header -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light px-5 border shadow"
+    >
+      <a class="h1 font-weight-bold text-dark" href="./12HomeLogedIn.html"
+        >USANE</a
+      >
+
+      <span class="d-flex flex-row d-none d-sm-block d-md-none">
+        <div class="dropdown">
+          <div
+            class="nav-item nav-link h5 font-weight-bold text-dark"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <ion-icon name="notifications"></ion-icon>
+          </div>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">notifications</a>
+            <a class="dropdown-item" href="#">notifications</a>
+            <a class="dropdown-item" href="#">notifications</a>
+          </div>
+        </div>
+        <a
+          class="nav-item nav-link h5 font-weight-bold text-dark"
+          href="./5Profile.html"
+        >
+          <ion-icon name="person-sharp"></ion-icon>
+        </a>
+      </span>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <span style="min-width: 300px;" class="nav-item nav-link h5 mr-4">
+            <a href="./10Search.html">
+              <input
+              style="border-radius: 50px;"
+              type="text"
+              class="form-control"
+              placeholder="Search"
+              />
+            </a>
+          </span>
+          <a
+            class="nav-item nav-link h5 font-weight-bold mr-4 text-dark"
+            href="./13Services.html"
+            >OUR PROGRAMS</a
+          >
+          <a
+            class="nav-item nav-link h5 font-weight-bold mr-4 text-dark"
+            href="./11Magazine.html"
+            >MAGZINE</a
+          >
+          <a
+            class="nav-item nav-link h5 font-weight-bold mr-4 text-dark"
+            href="./15Academy.html"
+            >ACADEMY</a
+          >
+          <a
+            class="nav-item nav-link h5 font-weight-bold mr-4 text-dark"
+            href="#"
+            >CONTACT
+          </a>
+          <div class="dropdown d-none d-sm-block">
+            <div
+              class="nav-item nav-link h5 font-weight-bold mr-3 text-dark"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <ion-icon name="notifications"></ion-icon>
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">notifications</a>
+              <a class="dropdown-item" href="#">notifications</a>
+              <a class="dropdown-item" href="#">notifications</a>
+            </div>
+          </div>
+          <a
+            class="nav-item nav-link h5 font-weight-bold mr-4 text-dark d-none d-sm-block"
+            href="./5Profile.html"
+          >
+            <ion-icon name="person-sharp"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <div style="overflow-x: hidden;" class="px-5 my-4">
+      <div class="row">
+        <!-- sidebar -->
+        <div class="col-md-3 d-none d-sm-block">
+          <div
+            class="border shadow"
+            style="border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;"
+          >
+            <div class="text-dark" style="font-size: 20px;">
+              <a href="./5Profile.html">
+                <p class="pl-4 py-2 text-white bg-primary font-weight-bold">
+                  <ion-icon class="mr-2" name="person-sharp"></ion-icon> Profile
+                </p>
+              </a>
+              <a href="./6Appointments.html">
+                <p class="pl-4 py-2 text-dark font-weight-bold">
+                  <ion-icon
+                    class="mr-2"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  Appointments
+                </p>
+              </a>
+              <a href="./7Recommendations.html">
+                <p class="pl-4 py-2 text-dark font-weight-bold">
+                  <ion-icon class="mr-2" name="newspaper-outline"></ion-icon>
+                  Recommandations
+                </p>
+              </a>
+              <a href="./8Chat.html">
+                <p class="pl-4 py-2 text-dark font-weight-bold">
+                  <ion-icon
+                    class="mr-2"
+                    name="chatbox-ellipses-outline"
+                  ></ion-icon>
+                  Chat
+                </p>
+              </a>
+              <a href="#">
+                <p class="pl-4 py-2 text-dark font-weight-bold">
+                  <ion-icon class="mr-2" name="timer-outline"></ion-icon>
+                  History
+                </p>
+              </a>
+              <a href="./9Statistics.html">
+                <p class="pl-4 py-2 text-dark font-weight-bold">
+                  <ion-icon class="mr-2" name="stats-chart-outline"></ion-icon>
+                  Statistics
+                </p>
+              </a>
+              <a href="./1Home.html">
+                <p class="pl-4 py-2 text-dark font-weight-bold">
+                  <ion-icon class="mr-2" name="log-out-outline"></ion-icon>
+                  Logout
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile -->
+        <div class="col-md-6">
+          <div
+            class="row mx-md-2 shadow border p-2 text-center"
+            style="border-radius: 20px;"
+          >
+            <div class="col-md-4 col-12 text-center">
+              <img width="130px" class="rounded-circle" src="./images/dp.png" />
+            </div>
+            <div class="col-md-8 col-12 py-2">
+              <div class="dropdown d-none d-sm-block">
+                <ion-icon
+                  class="float-right"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                  size="large"
+                  name="settings-sharp"
+                ></ion-icon>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="./4EditProfile.html"
+                    >Edit Profile</a
+                  >
+                </div>
+              </div>
+              <div class="mt-md-5 text-center text-md-left">
+                <h3>Alex Bexter</h3>
+                <div class="text-warning lead font-weight-bold">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  4.0
+                </div>
+                <br />
+                <div>
+                  <span style="border-radius:50px;" class="mr-2 px-2 border">
+                    Orthopedic
+                  </span>
+                  <span style="border-radius:50px;" class="px-2 border">
+                    Orthopedic
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row mx-md-2 shadow border p-3 mt-3"
+            style="border-radius: 20px;"
+          >
+            <div class="col">
+              <div class="d-flex">
+                <div class=""><h5>Bio</h5></div>
+                <div class="ml-auto">
+                  <ion-icon size="large" name="create-outline"></ion-icon>
+                </div>
+              </div>
+              <p class="text-muted mt-2">
+                <!-- See More -->
+                Flexbox can do some pretty awesome things when you mix flex
+                alignments with auto margins.
+                <a
+                  class="d-block d-md-none"
+                  data-toggle="collapse"
+                  href="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  See More...<br />
+                </a>
+                <span class="collapse" id="collapseExample">
+                  Flexbox can do some pretty awesome things when you mix flex
+                  alignments with auto margins. Shown below are three examples
+                  of controlling flex items via auto margins: default (no auto
+                  margin), pushing two items to the right (.mr-auto), and
+                  pushing two items to the left (.ml-auto).
+                </span>
+                <span class="d-none d-md-block" id="collapseExample">
+                  Flexbox can do some pretty awesome things when you mix flex
+                  alignments with auto margins. Shown below are three examples
+                  of controlling flex items via auto margins: default (no auto
+                  margin), pushing two items to the right (.mr-auto), and
+                  pushing two items to the left (.ml-auto).
+                </span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="row mx-md-2 shadow border my-3 p-2"
+            style="border-radius: 20px;"
+          >
+            <div class="col-12">
+              <h5>Reviews</h5>
+            </div>
+            <div class="col-md-2 col-3 my-auto">
+              <img class="rounded-circle w-100" src="./images/dp.png" alt="" />
+            </div>
+            <div class="col-md-10 col-9">
+              <div class="d-flex flex-row">
+                <div>
+                  <h5>Alex Bexter</h5>
+                </div>
+                <div class="text-warning ml-3">
+                  <ion-icon name="star"></ion-icon>
+                  4.0
+                </div>
+              </div>
+              <p class="text-muted">
+                Flexbox can do some pretty awesome things when you mix flex
+                alignments with auto margins.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Information -->
+        <div class="col-md-3 px-0 mb-2">
+          <div class="shadow border" style="border-radius: 20px;">
+            <h3 style="border-top-right-radius: 20px; border-top-left-radius: 20px;" class="text-center text-white bg-primary py-2">Information</h3>
+            <br />
+            <table class="table table-borderless">
+              <tbody>
+                <tr>
+                  <th>Email</th>
+                  <td class="text-primary font-weight-bold">Info@gmail.com</td>
+                </tr>
+                <tr>
+                  <th>Phone:</th>
+                  <td class="text-primary font-weight-bold">+92300-5544678</td>
+                </tr>
+                <tr>
+                  <th>Address:</th>
+                  <td>Jump Street, New York</td>
+                </tr>
+                <tr>
+                  <th>Birthday:</th>
+                  <td>01 April 1991</td>
+                </tr>
+                <tr>
+                  <th>Gender:</th>
+                  <td>Female</td>
+                </tr>
+                <tr>
+                  <th>Certification:</th>
+                  <td>
+                    Flexbox can do some pretty awesome things when you mix flex
+                    alignments with auto margins
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="p-3">
+
+              <button
+              type="button"
+              style="border-radius: 30px;"
+              class="btn btn-block btn-primary px-5 shadow"
+              >
+              <h5>
+                Edit Information
+              </h5>
+            </button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar -> bottomBar -->
+    <footer class="footer fixed-bottom bg-white d-block d-md-none">
+      <div class="d-flex text-center bg-light border">
+        <div class="p-2 flex-fill">
+          <a href="./5Profile.html">
+            <ion-icon
+              class="text-primary"
+              size="large"
+              class="mr-2"
+              name="person-circle-outline"
+            >
+          </a>
+        </div>
+        <div class="p-2 flex-fill">
+          <a href="./6Appointments.html">
+            <ion-icon
+              class="text-muted"
+              size="large"
+              class="mr-2"
+              name="time-outline"
+            >
+          </a>
+        </div>
+        <div class="p-2 flex-fill">
+          <a href="./7Recommendations.html">
+            <ion-icon
+              class="text-muted"
+              size="large"
+              class="mr-2"
+              name="list-circle-outline"
+            >
+          </a>
+        </div>
+        <div class="p-2 flex-fill">
+          <a href="./8Chat.html">
+            <ion-icon
+              class="text-muted"
+              size="large"
+              class="mr-2"
+              name="chatbubble-ellipses-outline"
+            >
+          </a>
+          <span 
+          style="position: absolute;" 
+          class="badge badge-pill badge-danger ml-n2">3</span>
+        </div>
+        <!-- <div class="p-2 flex-fill">
+          <a href="./1Home.html">
+            <ion-icon
+              class="text-dark"
+              size="large"
+              class="mr-2"
+              name="timer-outline"
+            >
+          </a>
+        </div> -->
+        <div class="p-2 flex-fill">
+          <a href="./9Statistics.html">
+            <ion-icon
+              class="text-muted"
+              size="large"
+              class="mr-2"
+              name="pie-chart-outline"
+            >
+          </a>
+        </div>
+        <div class="p-2 flex-fill">
+          <a href="./1Home.html">
+            <ion-icon
+              class="text-muted"
+              size="large"
+              class="mr-2"
+              name="power-outline"
+            ></ion-icon>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+      <!-- Footer -->
+    <div>
+      <footer class="text-white bg-dark">
+        <div class="container py-3">
+          <div class="row">
+            <div class="col-md-4 my-3">
+              <h1 class="mb-5 font-weight-bold">USANE</h1>
+              <li style="font-size: 22px;" class="font-weight-bold mt-3">
+                <ion-icon name="location-sharp"></ion-icon> Abc Street 123
+              </li>
+              <li style="font-size: 22px;" class="font-weight-bold mt-3">
+                <ion-icon name="call"></ion-icon>+123 456 789
+              </li>
+            </div>
+            <div class="col-md-4 my-3">
+              <h5 class="mb-4 font-weight-bold">CUSTOMER SERVICE</h5>
+              <li style="font-size: 16px;" class="mt-2 font-weight-bold">
+                <a href="#">HOME</a>
+              </li>
+              <li style="font-size: 16px;" class="mt-2 font-weight-bold">
+                <a href="#">BECOME A PROFESSIONAL</a>
+              </li>
+              <li style="font-size: 16px;" class="mt-2 font-weight-bold">
+                <a href="#">EXPLORE</a>
+              </li>
+              <li style="font-size: 16px;" class="mt-2 font-weight-bold">
+                <a href="#">MAGAZINE</a>
+              </li>
+              <li style="font-size: 16px;" class="mt-2 font-weight-bold">
+                <a href="#">JOIN US</a>
+              </li>
+              <li style="font-size: 16px;" class="mt-2 font-weight-bold">
+                <a href="#">LOGIN</a>
+              </li>
+            </div>
+
+            <div class="col-md-4 my-3">
+              <div class="d-flex flex-row bd-highlight mb-3">
+                <div class="">
+                  <input
+                    type="text"
+                    style="background-color: #737373; color: white; border-style: none;
+                  border-top-left-radius: 50px; border-bottom-left-radius: 50px;"
+                    class="form-control form-control-lg"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="">
+                  <button
+                    type="submit"
+                    style="border-top-right-radius: 50px; border-bottom-right-radius: 50px;"
+                    class="btn btn-primary btn-lg px-4"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+
+              <div class="mt-md-5 mt-3">
+                <ion-icon
+                  size="large"
+                  class="mr-2"
+                  name="logo-facebook"
+                ></ion-icon>
+                <ion-icon
+                  size="large"
+                  class="mr-2"
+                  name="logo-instagram"
+                ></ion-icon>
+                <ion-icon
+                  size="large"
+                  class="mr-2"
+                  name="mail-outline"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p style="background-color: black; margin: 0;" class="text-center py-2">
+          © ALL RIGHTS RESERVED USANE 2020
+        </p>
+      </footer>
+    </div>
+
+
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  </body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <title>USANE</title>
+  </head>
+  <body style="overflow-x: hidden !important;">
+    <!-- Header -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light px-5 border shadow"
+    >
+      <a class="h1 font-weight-bold text-dark" href="#">USANE</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link h4 text-dark pt-2 mr-4" href="#"
+            ><ion-icon name="person-sharp"></ion-icon
+          ></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <div class="mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-3 col-12 text-center">
+          <img
+            width="200"
+            class="rounded-circle"
+            src="./images/dp.png"
+            alt="Displlay Picture"
+          />
+          <p class="lead font-weight-bold">
+            <span class="text-muted h3">Alex Bexter</span>
+            <br />
+            <span class="text-primary">test@test.com</span>
+          </p>
+        </div>
+        <div class="col-md-5 col-9">
+          <ul class="timeline">
+            <li>
+              <span class="font-weight-bold" style="color: #428bca;"
+                >Personal Information</span
+              >
+              <hr
+                class="mt-o"
+                style="background-color: #428bca; height: 1px;"
+              />
+              <div class="form-row">
+                <div class="form-group col-md-6 col-6">
+                  <label class="mt-2">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control shadow py-3"
+                    style="border-radius: 25px;"
+                    placeholder="Alex"
+                  />
+                </div>
+                <div class="form-group col-md-6 col-6">
+                  <label class="mt-2">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control shadow py-3"
+                    style="border-radius: 25px;"
+                    placeholder="Bexter"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <label class="mt-2">Father Name</label>
+                <input
+                  type="text"
+                  class="form-control shadow py-3"
+                  style="border-radius: 25px;"
+                  placeholder="Michael Smith"
+                />
+              </div>
+              <div class="form-row">
+                <label class="mt-2">Phone Number</label>
+                <input
+                  type="text"
+                  class="form-control shadow py-3"
+                  style="border-radius: 25px;"
+                  placeholder="+923231212334"
+                />
+              </div>
+              <div class="form-row">
+                <label class="mt-2">Country</label>
+                <select
+                  class="form-control shadow"
+                  style="border-radius: 25px;"
+                  id="exampleFormControlSelect1"
+                >
+                  <option>USA</option>
+                  <option>Canada</option>
+                  <option>South Africa</option>
+                  <option>China</option>
+                  <option>France</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label class="mt-2">State</label>
+                <input
+                  type="text"
+                  class="form-control shadow py-3"
+                  style="border-radius: 25px;"
+                  placeholder="California"
+                />
+              </div>
+              <div class="form-row">
+                <label class="mt-2">Zip Code</label>
+                <input
+                  type="text"
+                  class="form-control shadow py-3"
+                  style="border-radius: 25px;"
+                  placeholder="44000"
+                />
+              </div>
+            </li>
+            <li>
+              <span class="font-weight-bold" style="color: #428bca;"
+                >Professional Information</span
+              >
+              <hr
+                class="mt-o"
+                style="background-color: #428bca; height: 1px;"
+              />
+              <div class="form-row">
+                <label class="mt-2">Profession</label>
+                <input
+                  type="text"
+                  class="form-control shadow py-3"
+                  style="border-radius: 25px;"
+                  placeholder="Graphics Designer"
+                />
+              </div>
+              <div class="form-row">
+                <label class="mt-2">Studied At</label>
+                <select
+                  class="form-control shadow"
+                  style="border-radius: 25px;"
+                  id="exampleFormControlSelect1"
+                >
+                  <option>USA</option>
+                  <option>Canada</option>
+                  <option>South Africa</option>
+                  <option>China</option>
+                  <option>France</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label class="mt-2">Experiance In</label>
+                <select
+                  class="form-control shadow"
+                  style="border-radius: 25px;"
+                  id="exampleFormControlSelect1"
+                >
+                  <option>PhotoShop</option>
+                  <option>PhotoShop</option>
+                  <option>PhotoShop</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label class="mt-2">Certificates</label>
+                <div class="ml-auto my-2">
+                  <button
+                    type="submit"
+                    style="border-radius: 25px;"
+                    class="btn btn-primary btn-lg px-4"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+              <p class="text-center mt-2">Add Another Certificate</p>
+              <div class="form-row">
+                <label>Bio</label>
+                <textarea
+                  class="form-control shadow py-3"
+                  style="border-radius: 20px;"
+                  rows="4"
+                ></textarea>
+              </div>
+            </li>
+            <li>
+              <div class="form-check form-row">
+                <input type="checkbox" class="form-check-input" />
+                <label class="form-check-label"
+                  >I agree to <a href="#">Terms and Conditions</a> <br />
+                  Here’s a quick example to demonstrate Bootstrap’s form styles.
+                  Keep reading for documentation on required classes, form
+                  layout, and more.</label
+                >
+              </div>
+              <a href="./5Profile.html">
+                <button
+                  style="border-radius: 25px;"
+                  type="submit"
+                  class="btn btn-primary btn-lg w-50 mt-2"
+                >
+                  Save
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-3 text-center">
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <ion-icon
+            class="text-primary"
+            style="font-size: 23px;"
+            name="checkmark-circle-sharp"
+          ></ion-icon>
+          <br />
+          <br />
+          <br />
+          <br />
+          <ion-icon
+            class="text-danger"
+            style="font-size: 23px;"
+            name="close-circle-sharp"
+          ></ion-icon>
+          <br />
+          <br />
+          <br />
+          <ion-icon
+            class="text-primary"
+            style="font-size: 23px;"
+            name="checkmark-circle-sharp"
+          ></ion-icon>
+          <br />
+          <br />
+          <br />
+          <ion-icon
+            class="text-primary"
+            style="font-size: 23px;"
+            name="checkmark-circle-sharp"
+          ></ion-icon>
+          <br />
+          <br />
+          <br />
+          <ion-icon
+            class="text-primary"
+            style="font-size: 23px;"
+            name="checkmark-circle-sharp"
+          ></ion-icon>
+          <br />
+          <br />
+          <br />
+          <ion-icon
+            class="text-primary"
+            style="font-size: 23px;"
+            name="checkmark-circle-sharp"
+          ></ion-icon>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <ion-icon
+            class="text-primary"
+            style="font-size: 23px;"
+            name="checkmark-circle-sharp"
+          ></ion-icon>
+          <br />
+          <br />
+          <br />
+          <ion-icon
+            class="text-primary"
+            style="font-size: 23px;"
+            name="checkmark-circle-sharp"
+          ></ion-icon>
+          <br />
+          <br />
+          <br />
+          <br />
+          <ion-icon
+            class="text-primary"
+            style="font-size: 23px;"
+            name="checkmark-circle-sharp"
+          ></ion-icon>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <ion-icon
+            class="text-primary"
+            style="font-size: 23px;"
+            name="checkmark-circle-sharp"
+          ></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  </body>
+</html>

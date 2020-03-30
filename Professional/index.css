@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  overflow-x: hidden !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+element.style {
+  overflow-x: hidden !important;
+}
+a {
+  text-decoration: none !important;
+}
+ul,
+li {
+  list-style-type: none !important;
+}
+a:hover {
+  text-decoration: none !important;
+}
+footer a {
+  color: white !important;
+}
+.bgPic {
+  background: lightblue url("./images/hbg.png") no-repeat center;
+  height: 88vh;
+  width: 100%;
+}
+.bgPicFor13 {
+  background: lightblue url("./images/bg.jpg") no-repeat center;
+  height: 60vh;
+  width: 100%;
+}
+.bgPicFor14 {
+  background: lightblue url("./images/bg.jpg") no-repeat center;
+  height: 90vh;
+  width: 100%;
+}
+
+.footerInput::placeholder {
+  color: white !important;
+}
+
+/* timeline in EditProfile*/
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  border-left: 2px dotted #0275d8;
+  height: 89%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #0275d8;
+  background-color: #0275d8;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+.customButton:hover {
+  color: white;
+  background-color: #0275d8;
+}
+@media only screen and (max-width: 600px) {
+  .customImage {
+    width: 100%;
+  }
+}

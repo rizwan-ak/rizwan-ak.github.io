@@ -96,11 +96,6 @@
             href="./15Academy.html"
             >ACADEMY</a
           >
-          <a
-            class="nav-item nav-link h5 font-weight-bold mr-4 text-dark"
-            href="#"
-            >CONTACT
-          </a>
           <div class="dropdown d-none d-sm-block">
             <div
               class="nav-item nav-link h5 font-weight-bold mr-3 text-dark"
@@ -192,7 +187,10 @@
             </div>
             <div class="col-md-8 col-12 py-2">
               <div class="mt-md-3 text-center text-md-left">
-                <h3>Alex Bexter</h3>
+                <h3>Alex Bexter 
+                  <span class="float-right text-dark h4 font-weight-bold">
+                    $ 30
+                  </span></h3>
                 <div class="text-warning lead font-weight-bold">
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star"></ion-icon>
@@ -289,37 +287,165 @@
               <div id="datetimepicker13"></div>
             </div>
 
-            <!-- Calender End -->
+            <!-- Select Time -->
             <p class="mx-4 font-weight-bold">Select Time</p>
-            <form>
-              <div class="form-row px-3">
-                <div class="form-group col-md-6">
-                  <input
-                    type="number"
-                    placeholder="Hour"
-                    class="form-control form-control-lg"
-                    id="inputEmail4"
-                  />
-                </div>
-                <div class="form-group col-md-6">
-                  <input
-                    type="number"
-                    placeholder="Min"
-                    class="form-control form-control-lg"
-                    id="inputPassword4"
-                  />
-                </div>
+            <div class="row text-center mt-3 mx-3">
+              <div class="col-4 px-1">
+                <div style="border-radius: 10px;" class="bg-success py-2 text-white small font-weight-bold">08:30 am</div>
               </div>
+              <div class="col-4 px-1">
+                <div style="border-radius: 10px;" class="bg-danger py-2 text-white small font-weight-bold">08:30 am</div>
+              </div>
+              <div class="col-4 px-1">
+                <div style="border-radius: 10px;" class="bg-danger py-2 text-white small font-weight-bold">08:30 am</div>
+              </div>  
+            </div>
+            <div class="row text-center mt-3 mx-3">
+              <div class="col-4 px-1">
+                <div style="border-radius: 10px;" class="bg-success py-2 text-white small font-weight-bold">08:30 am</div>
+              </div>
+              <div class="col-4 px-1">
+                <div style="border-radius: 10px;" class="bg-success py-2 text-white small font-weight-bold">08:30 am</div>
+              </div>
+              <div class="col-4 px-1">
+                <div style="border-radius: 10px;" class="bg-success py-2 text-white small font-weight-bold">08:30 am</div>
+              </div>  
+            </div>
+            <div class="row text-center mt-3 mx-3">
+              <div class="col-4 px-1">
+                <div style="border-radius: 10px;" class="bg-danger py-2 text-white small font-weight-bold">08:30 am</div>
+              </div>
+              <div class="col-4 px-1">
+                <div style="border-radius: 10px;" class="bg-success py-2 text-white small font-weight-bold">08:30 am</div>
+              </div>
+              <div class="col-4 px-1">
+                <div style="border-radius: 10px;" class="bg-success py-2 text-white small font-weight-bold">08:30 am</div>
+              </div>  
+            </div>
+            <div class="row text-left mt-4 mx-3">
+              <div class="col-6 px-1">
+                <p class="text-success small font-weight-bold">
+                  <ion-icon name="checkbox-sharp"></ion-icon>
+                  Avalible/Free
+                </p>
+              </div>
+              <div class="col-6 px-1">
+                <p class="text-danger small font-weight-bold">
+                  <ion-icon name="checkbox-sharp"></ion-icon>
+                  Booked
+                </p>
+              </div>
+               
+            </div>
+
               <div class="p-3">
                 <button
+                  data-toggle="modal"
+                  data-target="#bookProfessional"
                   style="border-radius: 50px;"
                   type="submit"
-                  class="py-3 btn btn-block btn-primary"
+                  class="py-2 btn btn-block btn-primary font-weight-bold"
                 >
                   Book Professional
                 </button>
+
+                <!-- bookProfessional Modal -->
+                <div
+                class="modal fade"
+                id="bookProfessional"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                  <div class="modal-content" style="border-radius: 25px;">
+                    <div class="col">
+                      <div class="d-flex">
+                        <div class="ml-auto">
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <ion-icon
+                              class="p-2 rounded-circle border shadow-lg"
+                              name="close-outline"
+                            ></ion-icon>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="mx-2">
+                        <div class="text-center">
+                          <img
+                            width="200"
+                            class="rounded-circle"
+                            src="./images/dp.png"
+                            alt="Displlay Picture"
+                          />
+                          <p class="lead font-weight-bold">
+                            <span class="text-muted h3">Alex Bexter</span>
+                            <br />
+                            <span class="text-warning">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star-outline"></ion-icon>
+                              4.0
+                            </span>
+                          </p>
+                          <div class="row mx-md-5 mx-3">
+                            <div class="col-6">
+                              <p class="small text-muted text-right">
+                                Fashion Designer
+                              </p>
+                              <h4 class="text-center">Date</h4>
+                              <select style="border-radius: 10px;" class="form-control">
+                                <option>14th Apr, 2020</option>
+                                <option>14th Apr, 2020</option>
+                                <option>14th Apr, 2020</option>
+                              </select>
+                            </div>
+                            <div class="col-6">
+                              <p class="small text-muted text-left">
+                                Fashion Designer
+                              </p>
+                              <h4 class="text-center">Time Slot</h4>
+                              <select style="border-radius: 10px;" class="form-control">
+                                <option>08:30 AM</option>
+                                <option>09:30 AM</option>
+                                <option>10:30 AM</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <h4 class="mt-4">Comment</h4>
+                        <textarea 
+                        style="border-radius: 20px;" 
+                        class="w-100 px-3" 
+                        rows="3"></textarea>
+                        <h4 class="mt-4">Charges <span class="float-right">
+                          $ 30
+                        </span></h4>
+                        <div class="row mx-md-5 mx-3 mt-3">
+                          <div class="col-6">
+                            <button style="border-radius: 10px;" type="button" class="btn btn-lg btn-primary w-100">Credit Card</button>
+                          </div>
+                          <div class="col-6">
+                            <button style="border-radius: 10px;" type="button" class="btn btn-lg btn-outline-primary w-100">Paypal</button>
+                          </div>
+                        </div>
+                        <h4 class="mt-4">Card Number</h4>
+                        <input style="border-radius: 10px;" type="text" class="form-control form-control-lg" placeholder="Enter Number">
+                        <button style="border-radius: 10px;" type="button" class="btn btn-lg btn-primary w-100 my-5">Credit Card</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
               </div>
-            </form>
           </div>
         </div>
       </div>

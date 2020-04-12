@@ -21,6 +21,10 @@
         padding: 12px;
         border-radius: 50% !important;
       }
+      .MyClass{
+        background-color: #0275d8;
+        color: white;
+      }
     </style>
     <title>USANE</title>
   </head>
@@ -431,15 +435,23 @@
                         </span></h4>
                         <div class="row mx-md-5 mx-3 mt-3">
                           <div class="col-6">
-                            <button style="border-radius: 10px;" type="button" class="btn btn-lg btn-primary w-100">Credit Card</button>
+                            <button id="demo" onclick="myFunction()" style="border-radius: 10px;" type="button" class="btn btn-lg btn-outline-primary w-100">Credit Card</button>
                           </div>
                           <div class="col-6">
-                            <button style="border-radius: 10px;" type="button" class="btn btn-lg btn-outline-primary w-100">Paypal</button>
+                            <button id="demo1" onclick="myFunction1()" style="border-radius: 10px;" type="button" class="btn btn-lg btn-outline-primary w-100">Paypal</button>
+                            <script>
+                            function myFunction() {
+                              $('#demo').addClass('MyClass');
+                            }
+                            function myFunction1() {
+                              $('#demo1').addClass('MyClass');
+                            }
+                            </script>
                           </div>
                         </div>
                         <h4 class="mt-4">Card Number</h4>
                         <input style="border-radius: 10px;" type="text" class="form-control form-control-lg" placeholder="Enter Number">
-                        <button style="border-radius: 10px;" type="button" class="btn btn-lg btn-primary w-100 my-5">Credit Card</button>
+                        <button style="border-radius: 10px;" type="button" class="btn btn-lg btn-primary w-100 my-5">Proceed to Payment</button>
                       </div>
                     </div>
                   </div>

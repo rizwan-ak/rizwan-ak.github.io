@@ -21,6 +21,10 @@
         padding: 12px;
         border-radius: 50% !important;
       }
+      .myActive{
+      background-color: greenyellow !important;
+      width: 400px;
+      }
     </style>
     <title>USANE</title>
   </head>
@@ -544,11 +548,18 @@
           inline: true,
           sideBySide: true,
           format: "DD-MM-YY",
-          stepping: 30,
-          allowMultidate: true
+          stepping: 30
           // minDate: moment()
         });
       });
+      $('#datetimepicker13').ready(function(){
+        $(".day").click(()=> {
+          $(this).css({backgroundColor:'red !important', color: 'green'});
+          $(this).addClass('active');
+          console.log('asdfasdf');
+        });
+      });
+      
     </script>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script

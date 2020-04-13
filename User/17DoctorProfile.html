@@ -25,6 +25,10 @@
         background-color: #0275d8;
         color: white;
       }
+      .MyClass1{
+        color: #0275d8;
+        background-color: white;
+      }
     </style>
     <title>USANE</title>
   </head>
@@ -441,10 +445,12 @@
                             <button id="demo1" onclick="myFunction1()" style="border-radius: 10px;" type="button" class="btn btn-lg btn-outline-primary w-100">Paypal</button>
                             <script>
                             function myFunction() {
+                              $('#demo1').removeClass('MyClass');
                               $('#demo').addClass('MyClass');
                             }
                             function myFunction1() {
                               $('#demo1').addClass('MyClass');
+                              $('#demo').removeClass('MyClass');
                             }
                             </script>
                           </div>

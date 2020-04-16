@@ -1,136 +1,126 @@
-*{
-	margin: 0;
-	padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.btn-group .btn{
-	border-radius: 10px;
-	width: 130px;
-	font-weight: 700;
-	color: black;
-	border: 1px solid rgb(236, 236, 236);
-	
-}
-
-.container .row .box{
-	box-shadow: 1px 1px 3px 2px  rgb(233, 230, 230);
-	border-radius: 5px;
-	height: 100%;
-	
-}
-.container .row .box img
-{
-	margin: 20px 0px 0px 20px;
+.btn-group .btn {
+  border-radius: 10px;
+  width: 130px;
+  font-weight: 700;
+  color: black;
+  border: 1px solid rgb(236, 236, 236);
 }
 
-
-.container .row .box .btn{
-	float: right;
-	margin: 25px 10px 0px 5px;
-	border-radius: 40px 40px;
-    width: 100px;
-	background-color: rgb(214, 212, 212);
-	color: black;
-	line-height: 15px;
-	border: none;
-	font-weight: 500;
+.container .row .box {
+  box-shadow: 1px 1px 3px 2px rgb(233, 230, 230);
+  border-radius: 5px;
+  height: 100%;
 }
-.container .row .box .rate{
-	margin-left: 22%; margin-top: -15px;
-
+.container .row .box img {
+  margin: 20px 0px 0px 20px;
 }
 
+.container .row .box .btn {
+  float: right;
+  margin: 25px 10px 0px 5px;
+  border-radius: 40px 40px;
+  width: 100px;
+  background-color: rgb(214, 212, 212);
+  color: black;
+  line-height: 15px;
+  border: none;
+  font-weight: 500;
+}
+.container .row .box .rate {
+  margin-left: 22%;
+  margin-top: -15px;
+}
 
-.fa-star,.fa-star-o{
-    color:orange;}
-    .sidebar {
-        height: 100vh;
-        background-color: white;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        box-shadow: 2px 2px 3px rgb(206, 205, 205);
-        z-index: 12;
-    }
-    
-    .sidebar .brand {
-        font-size: 30px;
-        font-weight: bold;
-    }
-    
-    .sidebar ul {
-        list-style: none;
-        margin: auto;
-    }
-    
-    .sidebar ul li a {
-        color: rgb(99, 98, 98);
-        text-decoration: none;
-    }
-    
-    
-    .current {
-        transition: all .3s;
-    }
-    
-    .current:hover {
-        background-color: rgb(226, 226, 226);
-        color: black;
-        transform: translateY(-1px);
-    }
-    
-    
-    .sidebar-link:hover {
-        background-color: rgb(226, 226, 226);
-        color: black;
-    }
-    
-    .top-bar {
-        background-color: white;
-        box-shadow: 2px 2px 3px rgb(206, 205, 205);
-        z-index: 11;
-        display: flex;
-        justify-content: end;
-    }
-    
-    .icon-parent {
-        position: relative;
-    }
-    
-    .icon-bullet::after {
-        content: "";
-        position: absolute;
-        top: 12px;
-        left: 26px;
-        height: 7px;
-        width: 7px;
-        background-color: #B71c1c;
-        border-radius: 50%;
-    }
-    
+.fa-star,
+.fa-star-o {
+  color: orange;
+}
+.sidebar {
+  height: 100vh;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 3px rgb(206, 205, 205);
+  z-index: 12;
+}
 
-    .Pusher {
-        margin-top: 50px;
-        margin-left: 365px;
-    }
-    @media (max-width: 768px) {
-        .container .btn-group {
-            width: 200px;
-        }
-        .Pusher {
-            margin-top: 50px;
-        margin-left: 280px;
-        }
-        .container 
-    
-        .statusBar {
-            display: none;
-        }
-    }
-    
-    
-    @media (max-width: 1048px) {
-        .statusBar {
-            display: none;
-        }
-    }
-    
+.sidebar .brand {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: auto;
+}
+
+.sidebar ul li a {
+  color: rgb(99, 98, 98);
+  text-decoration: none;
+}
+
+.current {
+  transition: all 0.3s;
+}
+
+.current:hover {
+  background-color: rgb(226, 226, 226);
+  color: black;
+  transform: translateY(-1px);
+}
+
+.sidebar-link:hover {
+  background-color: rgb(226, 226, 226);
+  color: black;
+}
+
+.top-bar {
+  background-color: white;
+  box-shadow: 2px 2px 3px rgb(206, 205, 205);
+  z-index: 11;
+  display: flex;
+  justify-content: end;
+}
+
+.icon-parent {
+  position: relative;
+}
+
+.icon-bullet::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 26px;
+  height: 7px;
+  width: 7px;
+  background-color: #b71c1c;
+  border-radius: 50%;
+}
+
+.Pusher {
+  margin-top: 50px;
+  margin-left: 365px;
+}
+@media (min-width: 576px) {
+  .container .btn-group {
+    width: 200px;
+  }
+  .Pusher {
+    margin-top: 50px;
+    margin-left: 280px;
+  }
+  .container .statusBar {
+    display: none;
+  }
+}
+
+@media (max-width: 1048px) {
+  .statusBar {
+    display: none;
+  }
+}
